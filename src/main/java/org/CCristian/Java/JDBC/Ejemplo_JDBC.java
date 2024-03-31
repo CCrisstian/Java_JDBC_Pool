@@ -19,8 +19,8 @@ public class Ejemplo_JDBC {
 
         System.out.println("\nInsertar nuevo producto");
         Producto producto = new Producto();
-        producto.setNombre("Notebook Asus ROG");
-        producto.setPrecio(2550);
+        producto.setNombre("Notebook Omen HP");
+        producto.setPrecio(2900);
         producto.setFecha_registro(new Date());
         Categoria categoria = new Categoria();
         categoria.setId(3L);

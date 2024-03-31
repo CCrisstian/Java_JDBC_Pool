@@ -13,7 +13,7 @@ import java.util.Date;
 public class Ejemplo_JDBC_CRUD {
     public static void main(String[] args) {
 
-        try (Connection connection = Conexion_BaseDeDatos.getInstance())
+        try (Connection connection = Conexion_BaseDeDatos.getConnection())
         {
             System.out.println("------------------------CRUD------------------------");
             Repositorio<Producto> repositorio = new ProductoRepositorio_Implementacion();

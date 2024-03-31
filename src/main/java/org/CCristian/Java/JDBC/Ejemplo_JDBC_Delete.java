@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class Ejemplo_JDBC_Delete {
     public static void main(String[] args) {
 
-        try (Connection connection = Conexion_BaseDeDatos.getInstance())
+        try (Connection connection = Conexion_BaseDeDatos.getConnection())
         {
             Repositorio<Producto> repositorio = new ProductoRepositorio_Implementacion();
             System.out.println("Listando");

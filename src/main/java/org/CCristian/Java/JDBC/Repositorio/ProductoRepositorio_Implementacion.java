@@ -12,7 +12,7 @@ public class ProductoRepositorio_Implementacion implements Repositorio<Producto>
 
 /*------------------MÉTODOS------------------*/
     public Connection getConnection() throws SQLException {
-        return Conexion_BaseDeDatos.getInstance();
+        return Conexion_BaseDeDatos.getConnection();
     }
 
     @Override
